@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0
+}
+
+section {
+    padding:1rem
+}
+
+h1,h2,p {
+    color:white
+}
+
+#landing-page {
+    background-image: linear-gradient(to bottom right, #3B6AE4, #123597 60%);
+    min-height:100vh
+}
