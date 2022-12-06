@@ -1,17 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     padding:0;
     margin:0
 }
 
 section {
-    padding:1rem
+    padding:1rem;
+    display:grid
 }
 
 h1,h2,p {
-    color:white
+    color:white;
+    font-family: 'Montserrat',sans-serif;
 }
 
 #landing-page {
-    background-image: linear-gradient(to bottom right, #3B6AE4, #123597 60%);
+    background-image: linear-gradient(to bottom right, #2A58CE, #123597 60%);
     min-height:100vh
 }
