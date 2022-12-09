@@ -11,11 +11,39 @@ section {
 }
 
 h1,h2,p {
-    color:white;
-    font-family: 'Montserrat',sans-serif;
+    color:rgb(255, 255, 255);
+    font-family: Montserrat,sans-serif;
 }
 
 #landing-page {
     background-image: linear-gradient(to bottom right, #2A58CE, #123597 60%);
-    min-height:100vh
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-toggle {
+    position: fixed;
+}
+
+.lp-text-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.lp-text-wrapper h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.lp-text-wrapper h2 {
+    font-size: 3rem;
+    width: 75%;
+}
+
+.lp-text-wrapper p {
+    font-size: 1.5rem;
+     width: 40ch;
+     font-weight: 100;
 }
