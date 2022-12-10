@@ -11,7 +11,6 @@
 
 body {
     display:grid;
-    overflow-y: hidden;
 }
 
 section {
@@ -68,10 +67,10 @@ h1 {
     align-items: center;
     justify-self: center;
     position:fixed;
+    width:100%;
     top:0;
-    margin-top:1rem;
-    padding-left: 1rem;
-    justify-content: space-between;
+    margin:1rem;
+    justify-content: space-evenly;
 }
 
 .navbar a {
