@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 /* Shorthands */
@@ -18,10 +18,20 @@ section {
     display:grid
 }
 
-h1,h2,p {
-    color:rgb(255, 255, 255);
+h1,h2,h3,h4,p {
     font-family: 'Poppins',sans-serif;
 }
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 30pt;
+}
+
 
 #landing-page {
     background-image: linear-gradient(to bottom right, #2A58CE, #103396 70%);
@@ -34,8 +44,8 @@ h1,h2,p {
     'text image'
     'button image';
     grid-template-rows: 0.2fr max-content 0.25fr;
-    column-gap:3rem;
     align-content: center;
+    color:rgb(255, 255, 255);
 }
 
 .lp-text-wrapper {
@@ -45,20 +55,16 @@ h1,h2,p {
     grid-area:text
 }
 
-h1 {
-    font-size: 3rem;
-    font-weight: 700;
-}
 
-.lp-text-wrapper h2 {
+.lp-text-wrapper h1 {
     font-size: 2.5rem;
-    width: 20ch;
+    width: 5ch,50%,20ch;
     font-weight:500
 }
 
 .lp-text-wrapper p {
     font-size: 1.3rem;
-     width: 40ch;
+     width: 10ch,50%,40ch;
      font-weight: 400;
 }
 
@@ -86,6 +92,10 @@ h1 {
 
 .navbar a:hover {
     color:rgb(203, 203, 203)
+}
+
+.navbar a>h2{
+    color:#fff
 }
 
 #lp-img {
