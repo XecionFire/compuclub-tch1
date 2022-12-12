@@ -57,14 +57,15 @@ h3 {
 
 
 .lp-text-wrapper h1 {
-    font-size: 2.5rem;
-    width: 5ch,50%,20ch;
-    font-weight:500
+    font-size: 45px;
+    width: 20ch;
+    font-weight:900;
+    text-transform: uppercase;
 }
 
 .lp-text-wrapper p {
-    font-size: 1.3rem;
-     width: 10ch,50%,40ch;
+    font-size: 18px;
+     width: 30ch;
      font-weight: 400;
 }
 
@@ -75,7 +76,8 @@ h3 {
     position:fixed;
     width:100%;
     top:0;
-    margin:1rem;
+    margin-bottom:1rem;
+    padding: 1rem;
     justify-content: space-evenly;
 }
 
