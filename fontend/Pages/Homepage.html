@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -20,14 +19,15 @@
 
 <body>
     <nav class="navbar" aria-label="Navigations">
-        <a href="#landing-page">
+        <a href="#landing-page" id="home">
             <h2>Smamda</h2>
         </a>
         <div class="menu-wrapper" aria-label="Buttons">
-            <a href="#kegiatan">Kegiatan</a>
-            <a href="#landing-page">Ekstra</a>
-            <a href="#landing-page">Berita</a>
-            <a href="#landing-page">Akunku</a>
+            <a>Kegiatan</a>
+            <a>Ekstra</a>
+            <a>Berita</a>
+            <a>Guru</a>
+            <a>Akunku</a>
         </div>
 
     </nav>
@@ -40,14 +40,27 @@
         <img src="../image/lpPic.jpg" alt="" id="lp-img">
         <button id="lp-button">Explore &rarr;</button>
     </section>
-    <section>
+    <section id="tentang">
         <h3>Tentang Smamda</h3>
-        <p>SMA Muhammadiyah 2 Surabaya merupakan sekolah yang telah mencetak banyak siswa berprestasi di dalam dan di
-            luar negeri dalam bidang akademik maupun non-akademik sejak tahun 1975</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque delectus incidunt doloremque temporibus corrupti officia! Dolores facilis quam repellat distinctio pariatur veritatis ex rerum, quis commodi aperiam obcaecati recusandae nulla eos necessitatibus cupiditate voluptatum eius non, sed optio qui autem amet numquam labore ullam? Vel enim sed quos quia rem?</p>
     </section>
-    <section>
+    <section id="kegiatan">
         <h3>Kegiatan terbaru</h3>
         <p>Lorem ipsum dolor sit amet.</p>
+        <article id="kegiatan_card_container">
+            <section class="kegiatan_card">
+                <img src="../image/lpPic.jpg" />
+                <p><time datetime="2022-12-5">5th December</time></p>
+                <h4>Pemberitahuan Asesmen Sumatif Akhir Semester dan Penilaian Akhir Semester Ganjil 2022-2023</h4>
+            </section>
+
+            <section class="kegiatan_card">
+                <img src="../image/lpPic.jpg" />
+                <p><time datetime="2022-12-5">5th December</time></p>
+                <h4>Pemberitahuan Asesmen Sumatif Akhir Semester dan Penilaian Akhir Semester Ganjil 2022-2023</h4>
+            </section>
+            
+        </article>
     </section>
     <section>
         <h3>Ekstrakurikuler</h3>

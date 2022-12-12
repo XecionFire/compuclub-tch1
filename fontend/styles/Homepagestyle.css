@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /* Shorthands */
 /* lp = landing-page */
@@ -14,12 +14,18 @@ body {
 }
 
 section {
-    padding:1rem;
+    padding:1rem 2rem;
     display:grid
 }
 
-h1,h2,h3,h4,p {
+h1,h2,h3,h4 {
     font-family: 'Poppins',sans-serif;
+}
+
+p {
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.5rem;
+    font-weight: 400;
 }
 
 h2 {
@@ -30,20 +36,25 @@ h2 {
 h3 {
     font-weight: 600;
     font-size: 30pt;
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 75ch;
+    font-size: 18px;
+    margin-bottom:1rem
 }
 
 
 #landing-page {
     background-image: linear-gradient(to bottom right, #2A58CE, #103396 70%);
     min-height:100vh;
-    padding: 1rem 2rem;
     justify-content: center;
     align-items: center;
     grid-template-areas: 
-    'blank blank'
     'text image'
     'button image';
-    grid-template-rows: 0.2fr max-content 0.25fr;
+    grid-template-rows: max-content 0.25fr;
     align-content: center;
     color:rgb(255, 255, 255);
 }
@@ -52,7 +63,8 @@ h3 {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    grid-area:text
+    grid-area:text;
+    padding:0
 }
 
 
@@ -67,6 +79,7 @@ h3 {
     font-size: 18px;
      width: 30ch;
      font-weight: 400;
+     line-height: 28px;
 }
 
 .navbar {
@@ -117,5 +130,31 @@ h3 {
     font-size: 1.5rem;
     color:white;
     grid-area:button;
-    margin-left: 1rem;
+}
+
+#kegiatan_card_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem
+}
+
+.kegiatan_card {
+    border: 2px solid black;
+    max-width: fit-content;
+}
+
+.kegiatan_card h4 {
+    width:30ch
+}
+
+.kegiatan_card time {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.kegiatan_card img {
+    aspect-ratio: 4/3;
+    width:200px;
+    margin-bottom:1rem;
 }
