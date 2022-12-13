@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* Shorthands */
 /* lp = landing-page */
@@ -11,6 +12,7 @@
 
 body {
     display:grid;
+    row-gap: 5rem;
 }
 
 section {
@@ -23,9 +25,9 @@ h1,h2,h3,h4 {
 }
 
 p {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Inter',sans-serif;
     line-height: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2 {
@@ -41,7 +43,7 @@ h3 {
 
 section p {
     max-width: 75ch;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom:1rem
 }
 
@@ -76,7 +78,7 @@ section p {
 }
 
 .lp-text-wrapper p {
-    font-size: 18px;
+    font-size: 21px;
      width: 30ch;
      font-weight: 400;
      line-height: 28px;
@@ -102,7 +104,8 @@ section p {
 
 .menu-wrapper a {
     margin-left:1rem;
-    font-size:1.2rem
+    font-size:1.2rem;
+    cursor: pointer;
 }
 
 .navbar a:hover {
@@ -132,37 +135,34 @@ section p {
     grid-area:button;
 }
 
-#kegiatan_card_container {
+#activity_card_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap:1rem
 }
 
-.kegiatan_card {
+.activity_card {
     border: 2px solid black;
     max-width: fit-content;
 }
 
-.kegiatan_card h4 {
+.activity_card h4 {
     width:30ch
 }
 
-.kegiatan_card time {
+.activity_card time {
     font-size: 24px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-.kegiatan_card img {
+.activity_card img {
     aspect-ratio: 4/3;
     width:200px;
     margin-bottom:1rem;
 }
 
 
-#ekstra_section {
-
-}
 
 #ekstra_section button {
     padding:0.75rem;
