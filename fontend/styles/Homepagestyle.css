@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
 /* Shorthands */
 /* lp = landing-page */
@@ -145,15 +145,18 @@ section p {
 .activity_card {
     border: 2px solid black;
     max-width: fit-content;
+    border-radius: 10px;
 }
 
 .activity_card h4 {
-    width:30ch
+    width:25ch
 }
 
 .activity_card time {
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 700;
     font-size: 24px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.404);
 }
 
 .activity_card img {
@@ -172,4 +175,5 @@ section p {
     color:white;
     border: none;
     border-radius: 5px;
+    cursor:pointer
 }
