@@ -94,6 +94,7 @@ section p {
     margin-bottom:1rem;
     padding: 1rem;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .navbar a {
