@@ -17,7 +17,7 @@ body {
 
 section {
     padding:1rem 2rem;
-    display:grid
+    display:grid;
 }
 
 h1,h2,h3,h4 {
@@ -100,12 +100,12 @@ section p {
     text-decoration: none;
     color:#fff;
     font-family: 'Noto Sans', sans-serif;
+    cursor:pointer
 }
 
 .menu-wrapper a {
     margin-left:1rem;
     font-size:1.2rem;
-    cursor: pointer;
 }
 
 .navbar a:hover {
@@ -143,19 +143,24 @@ section p {
 }
 
 .activity_card {
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: fit-content;
     border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(204, 204, 204) ;
 }
 
 .activity_card h4 {
-    width:25ch
+    width:25ch;
+    font-size: 16px;
 }
 
 .activity_card time {
     font-family: 'Quicksand',sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.404);
 }
 
@@ -165,9 +170,7 @@ section p {
     margin-bottom:1rem;
 }
 
-
-
-#ekstra_section button {
+#ekstraCC_section button {
     padding:0.75rem;
     max-width: fit-content;
     font-size: 18px;

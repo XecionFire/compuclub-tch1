@@ -19,18 +19,18 @@
 
 <body>
     <nav class="navbar" aria-label="Navigations">
-        <a href="#landing-page" id="home">
+        <a id="home">
             <h2>Smamda</h2>
         </a>
         <div class="menu-wrapper" aria-label="Buttons">
-            <a href="#kegiatan">Berita & Kegiatan</a>
-            <a>Ekstra</a>
-            <a>Guru</a>
-            <a>Akunku</a>
+            <a href="#activity" data-to="#activity" >Berita & Kegiatan</a>
+            <a data-to="#activity">Ekstra</a>
+            <a data-to="#activity">Guru</a>
+            <a data-to="#activity">Akunku</a>
         </div>
 
     </nav>
-    <section class="sections" id="landing-page">
+    <section id="landing-page">
         <section class="lp-text-wrapper">
             <h1>Excellent with character and achievement</h1>
             <p>Pendidikan adalah paspor masa depan, karena hari esok adalah milik mereka yang mempersiapkannya hari ini
@@ -39,12 +39,12 @@
         <img src="../image/lpPic.jpg" alt="" id="lp-img">
         <button id="lp-button">Explore &rarr;</button>
     </section>
-    <section id="tentang">
+    <section id="tentang" class="sections">
         <h3>Tentang Smamda</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rerum similique officiis perferendis quas cum? Cupiditate eaque asperiores minima quibusdam et distinctio voluptatum harum quas doloribus accusamus aut adipisci assumenda inventore nesciunt officia corrupti optio, eos aliquid alias. Facere, rerum.</p>
         <p>Voluptate aperiam, fuga laborum repudiandae consequatur quis sit rem earum asperiores velit blanditiis commodi temporibus deleniti at soluta sequi, a nihil est eos tenetur culpa error aliquam! Expedita aperiam magnam placeat quisquam ab cum necessitatibus iste animi, nisi nulla id!</p>
     </section>
-    <section id="activity">
+    <section id="activity" class="sections">
         <h3>Berita & Kegiatan terbaru</h3>
         <p>Lorem ipsum dolor sit amet.</p>
         <article id="activity_card_container">
@@ -54,7 +54,7 @@
                 <h4>Pemberitahuan Asesmen Sumatif Akhir Semester dan Penilaian Akhir Semester Ganjil 2022-2023</h4>
             </section>
 
-            <section class="activity_card">
+            <section class="activity_card" class="sections">
                 <img src="../image/lpPic.jpg" />
                 <p><time datetime="2022-12-5">5th December</time></p>
                 <h4>Pemberitahuan Asesmen Sumatif Akhir Semester dan Penilaian Akhir Semester Ganjil 2022-2023</h4>
@@ -62,11 +62,12 @@
             
         </article>
     </section>
-    <section id="ekstra_section">
+    <section id="ekstraCC_section" class="sections">
         <h3>Ekstrakurikuler</h3>
         <p>SMA Muhammadiyah 2 Surabaya menekankan pentingnya kegiatan ekstrakurikuler, namun terkadang sulit bagi siswa untuk melihat bagaimana waktu dan dedikasinya akan menguntungkan mereka. Dari menguatkan pikiran untuk mempromosikan keterampilan manajemen waktu yang lebih baik, kegiatan ekstrakurikuler dapat membantu siswa sukses lebih dari sekedar usaha akademis mereka.</p>
         <a href="./Ekstrakurikuler.html"><button>Lihat Ekskul</button></a>
     </section>
+
     </section>
     <footer>
         <p>Website by Muhammad Ravindra 10.1, Raphael 10.12</p>
