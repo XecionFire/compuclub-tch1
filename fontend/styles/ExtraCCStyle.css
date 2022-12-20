@@ -5,16 +5,17 @@
 /* Shorthands */
 /* lp = landing-page */
 
-*{
-    padding:0;
-    margin:0,
+* {
+    padding: 0;
+    margin: 0,
 }
 
 body {
-    margin:1rem
+    margin: 1rem
 }
 
-h1,h2 {
+h1,
+h2 {
     font-family: 'Poppins';
 }
 
@@ -22,70 +23,82 @@ h1 {
     font-size: 56px;
 }
 
-p,label {
+p,
+label {
     font-family: 'Inter';
 }
 
 .back-btn {
-    padding:.5rem
+    padding: .5rem
 }
 
 .in_extra_section {
     display: flex;
     max-width: fit-content;
-    border-radius:2px;
+    border-radius: 2px;
     aspect-ratio: 1/1;
-    width:200px;
+    width: 200px;
     padding: 8px;
     flex-direction: column;
     justify-content: center;
     margin-right: 1rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px rgb(204, 204, 204);
+    box-shadow: 
+    2px 2px 10px hsl(0deg 0% 0% / 0.085),
+    3px 3px 10px hsl(0deg 0% 0% / 0.085)
+    ;
 }
 
 .extra_img {
     aspect-ratio: 1/1;
-    width:80px;
+    width: 80px;
     align-self: center;
+    margin-top: 1rem;
 }
 
 .extra_title {
-    width:15ch;
+    width: 15ch;
     text-align: center;
 }
 
 #search {
     display: block;
-    padding:0.5rem;
-    width:300px
+    padding: 0.5rem;
+    width: 300px;
+    border:2px solid hsla(0, 0%, 50%, 0.5);
+    border-radius: 5px;
 }
 
 #search_label {
     font-size: 20px;
 }
 
-.category_label{
+.category_label {
     margin-bottom: 1rem;
     font-size: 20px;
 
 }
 
 .extra_section_container {
-    display:flex;
-    
+    display: flex;
+
 }
 
 .back-btn {
     display: block;
     margin-bottom: 1rem;
     text-decoration: none;
-    max-width:fit-content;
-    padding:0;
-    
+    max-width: fit-content;
+    padding: 0;
+
 }
 
 .back-btn button {
     padding: .5rem;
-    cursor:pointer
+    cursor: pointer;
+    color: #103396;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
 }
