@@ -5,27 +5,30 @@
 /* Shorthands */
 /* lp = landing-page */
 
-*{
-    padding:0;
-    margin:0
+* {
+    padding: 0;
+    margin: 0
 }
 
 body {
-    display:grid;
+    display: grid;
     row-gap: 5rem;
 }
 
 section {
-    padding:1rem 2rem;
-    display:grid;
+    padding: 1rem 2rem;
+    display: grid;
 }
 
-h1,h2,h3,h4 {
-    font-family: 'Poppins',sans-serif;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.5rem;
     font-weight: 500;
 }
@@ -44,54 +47,54 @@ h3 {
 section p {
     max-width: 75ch;
     font-size: 20px;
-    margin-bottom:1rem
+    margin-bottom: 1rem
 }
 
 
 #landing-page {
     background-image: linear-gradient(to bottom right, #2A58CE, #103396 70%);
-    min-height:100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    grid-template-areas: 
-    'text image'
-    'button image';
+    grid-template-areas:
+        'text image'
+        'button image';
     grid-template-rows: max-content 0.25fr;
     align-content: center;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
 .lp-text-wrapper {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    grid-area:text;
-    padding:0
+    grid-area: text;
+    padding: 0
 }
 
 
 .lp-text-wrapper h1 {
     font-size: 45px;
     width: 20ch;
-    font-weight:900;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
 .lp-text-wrapper p {
     font-size: 21px;
-     width: 30ch;
-     font-weight: 400;
-     line-height: 28px;
+    width: 30ch;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-self: center;
-    position:fixed;
-    width:100%;
-    top:0;
-    margin-bottom:1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-bottom: 1rem;
     padding: 1rem;
     justify-content: space-around;
     z-index: 1;
@@ -99,48 +102,48 @@ section p {
 
 .navbar a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     font-family: 'Noto Sans', sans-serif;
-    cursor:pointer
+    cursor: pointer
 }
 
 .menu-wrapper a {
-    margin-left:1rem;
-    font-size:1.2rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
 }
 
 .navbar a:hover {
-    color:rgb(203, 203, 203)
+    color: rgb(203, 203, 203)
 }
 
-.navbar a>h2{
-    color:#fff
+.navbar a>h2 {
+    color: #fff
 }
 
 #lp-img {
     aspect-ratio: 4/3;
-    width:300px;
-    grid-area:image;
+    width: 300px;
+    grid-area: image;
     border-radius: 20px;
-    box-shadow: 10px 10px 26px  #1158AC, -20px -18px 0px #1158AC;
+    box-shadow: 10px 10px 26px #1158AC, -20px -18px 0px #1158AC;
 }
 
 #lp-button {
     background-color: transparent;
-    border:2px solid white;
+    border: 2px solid white;
     border-radius: 15px;
-    width:fit-content;
+    width: fit-content;
     padding: 1rem;
     font-size: 1.5rem;
-    color:white;
-    grid-area:button;
+    color: white;
+    grid-area: button;
 }
 
 #activity_card_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:1rem
+    gap: 1rem
 }
 
 .activity_card {
@@ -150,16 +153,16 @@ section p {
     max-width: fit-content;
     border-radius: 10px;
     cursor: pointer;
-    box-shadow: 2px 2px 10px hsl(0deg 0% 0% / 0.085),3px 3px 10px hsl(0deg 0% 0% / 0.085);
+    box-shadow: 2px 2px 10px hsl(0deg 0% 0% / 0.085), 3px 3px 10px hsl(0deg 0% 0% / 0.085);
 }
 
 .activity_card h4 {
-    width:25ch;
+    width: 25ch;
     font-size: 16px;
 }
 
 .activity_card time {
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.404);
@@ -167,17 +170,45 @@ section p {
 
 .activity_card img {
     aspect-ratio: 4/3;
-    width:200px;
-    margin-bottom:1rem;
+    width: 200px;
+    margin-bottom: 1rem;
 }
 
 #ekstraCC_section button {
-    padding:0.75rem;
-    max-width: fit-content;
+    padding: 0.75rem;
     font-size: 18px;
     background-color: #103396;
-    color:white;
+    color: white;
     border: none;
     border-radius: 5px;
-    cursor:pointer
+    cursor: pointer
+}
+
+#extraCC_btn {
+    max-width: fit-content;
+}
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 80%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.skeleton-text {
+    width: 100%;
+    height: 0.7rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.skeleton-cover-img {
+    border:none
 }
