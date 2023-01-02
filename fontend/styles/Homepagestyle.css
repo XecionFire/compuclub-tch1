@@ -102,7 +102,7 @@ section p {
     padding: 1rem;
     justify-content: space-evenly;
     z-index: 1;
-    width:100vw;
+    width: 100vw;
 }
 
 .navbar li a {
@@ -121,7 +121,7 @@ section p {
 .menu-wrapper li {
     margin-left: 1rem;
     font-size: 1.2rem;
-    
+
 }
 
 .navbar a:hover {
@@ -130,7 +130,7 @@ section p {
 
 .navbar a>h2 {
     color: #fff;
-    margin-left:1.5rem;
+    margin-left: 1.5rem;
 }
 
 #lp-img {
@@ -171,7 +171,7 @@ section p {
 
 .skeleton-card {
     justify-content: flex-start;
-    
+
 }
 
 .activity_card h4 {
@@ -221,35 +221,43 @@ section p {
 }
 
 .skeleton-text {
-    width:30ch;
+    width: 30ch;
     height: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 0.25rem;
 }
 
 .skeleton-date {
-    width:70%;
+    width: 70%;
     margin-bottom: 2rem;
 }
 
 .skeleton-cover-img {
-    width:250px;
+    width: 250px;
     aspect-ratio: 4/3;
     outline: none;
     margin-bottom: 1rem;
 }
 
-@media only screen and (max-width:950px){
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@media only screen and (max-width:950px) {
     .navbar {
         justify-content: space-between;
     }
 
-    .menu-wrapper{
+    .menu-wrapper {
         display: none;
         flex-direction: column;
     }
 
-    .menu-wrapper li {
-        
-    }
+    .menu-wrapper li {}
 }
