@@ -133,6 +133,17 @@ section p {
     margin-left: 1.5rem;
 }
 
+.nav-toggle {
+    margin-right: 1.5rem;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+.hoverable {
+    pointer-events: none;
+}
+
 #lp-img {
     aspect-ratio: 4/3;
     width: 300px;
@@ -259,5 +270,7 @@ section p {
         flex-direction: column;
     }
 
-    .menu-wrapper li {}
+    .menu-wrapper li {
+
+    }
 }

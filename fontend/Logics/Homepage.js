@@ -35,3 +35,4 @@ $(".activity_card").hover((e) => {
 $('.menu-wrapper').children().each(function() {
     console.log(this);
 })
+
