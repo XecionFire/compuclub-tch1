@@ -36,3 +36,6 @@ $('.menu-wrapper').children().each(function() {
     console.log(this);
 })
 
+$('#lp-button').hover((e) => {
+    $('#lp-button .hoverable').css('color:red')
+})

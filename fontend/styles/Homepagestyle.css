@@ -64,9 +64,14 @@ section p {
     grid-template-areas:
         'text image'
         'button image';
-    grid-template-rows: max-content 0.25fr;
+    grid-template-rows: max-content .2fr;
     align-content: center;
     color: rgb(255, 255, 255);
+}
+
+#home {
+    user-select: none;
+    cursor: pointer;
 }
 
 .lp-text-wrapper {
@@ -134,6 +139,7 @@ section p {
 }
 
 .nav-toggle {
+    display:none;
     margin-right: 1.5rem;
     background-color: transparent;
     border:none;
@@ -272,5 +278,9 @@ section p {
 
     .menu-wrapper li {
 
+    }
+
+    .nav-toggle{
+        display:block
     }
 }
