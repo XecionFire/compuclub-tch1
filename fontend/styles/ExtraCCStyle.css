@@ -11,7 +11,7 @@
 }
 
 body {
-    margin: 1rem
+    margin: 1em
 }
 
 h1,
@@ -30,7 +30,7 @@ label {
 }
 
 .back-btn {
-    padding: .5rem
+    padding: .5em
 }
 
 .in_extra_section {
@@ -42,7 +42,7 @@ label {
     padding: 8px;
     flex-direction: column;
     justify-content: center;
-    margin-right: 1rem;
+    margin-right: 1em;
     border-radius: 10px;
     box-shadow: 
     2px 2px 10px hsl(0deg 0% 0% / 0.085),
@@ -54,7 +54,7 @@ label {
     aspect-ratio: 1/1;
     width: 80px;
     align-self: center;
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
 .extra_title {
@@ -64,15 +64,15 @@ label {
 
 #search {
     display: block;
-    padding: 0.5rem;
+    padding: 0.5em;
     width: 300px;
     border:2px solid hsla(0, 0%, 50%, 0.5);
     border-radius: 5px;
+    margin-top: .5em;
 }
 
 #search_label {
     font-size: 20px;
-    
 }
 
 .category_label {
