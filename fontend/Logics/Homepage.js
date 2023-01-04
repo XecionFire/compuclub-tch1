@@ -10,6 +10,10 @@ ScrollTrigger.create({
     }
 })
 
+$(document).ready(function() {
+    
+})
+
 $("#home").click(() => {
     $('html,body').animate({
         scrollTop:0
@@ -32,10 +36,10 @@ $(".activity_card").hover((e) => {
     gsap.to(el,{y:'0',boxShadow: '2px 2px 10px hsl(0deg 0% 0% / 0.085),3px 3px 10px hsl(0deg 0% 0% / 0.085)'})
 })
 
-$('.menu-wrapper').children().each(function() {
-    console.log(this);
-})
+// $('.menu-wrapper').children().each(function() {
+//     console.log(this);
+// })
 
-$('#lp-button').hover((e) => {
-    $('#lp-button .hoverable').css('color:red')
+$('#nav-toggle').on('click', (e) => {
+    console.log('clicked');
 })
