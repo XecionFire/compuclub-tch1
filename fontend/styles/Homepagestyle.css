@@ -139,12 +139,16 @@ section p {
 }
 
 #nav-toggle {
-    display:none;
+    display: none;
     margin-right: 1.5rem;
     background-color: transparent;
-    border:none;
+    border: none;
     cursor: pointer;
     z-index: 2;
+}
+
+#toggle-img {
+    pointer-events: none;
 }
 
 .hoverable {
@@ -274,14 +278,20 @@ section p {
 
     .menu-wrapper {
         display: none;
+    }
+    
+    .menu-wrapper-active {
+        display:'flex';
+        position: fixed;
         flex-direction: column;
+
     }
 
     /* .menu-wrapper li {
 
     } */
 
-    #nav-toggle{
-        display:block
+    #nav-toggle {
+        display: block
     }
 }

@@ -1,5 +1,8 @@
 const Navbar = $(".navbar");
 
+// Toggles
+let navToggle = false
+
 ScrollTrigger.create({
     start:'25px',
     onEnter:() => {
@@ -41,5 +44,6 @@ $(".activity_card").hover((e) => {
 // })
 
 $('#nav-toggle').on('click', (e) => {
-    console.log('clicked');
+    navToggle == false ? $('.menu-wrapper').css('display','flex') : $('.menu-wrapper').css('display','none')
+    navToggle = !navToggle
 })
