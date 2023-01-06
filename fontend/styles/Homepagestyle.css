@@ -64,7 +64,7 @@ section p {
     grid-template-areas:
         'text image'
         'button image';
-    grid-template-rows: max-content .2fr;
+    grid-template-rows: fit-content .2fr;
     align-content: center;
     color: rgb(255, 255, 255);
 }
@@ -279,12 +279,34 @@ section p {
     .menu-wrapper {
         display: none;
     }
-    
-    .menu-wrapper-active {
-        display:'flex';
+
+    .menu-active {
+        display: 'flex';
         position: fixed;
         flex-direction: column;
+        top: 15%
+    }
 
+    .lp-text-wrapper h1 {
+        font-size: 1.75rem;
+    }
+
+
+    .lp-text-wrapper p {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    #landing-page {
+        grid-template-areas:
+        'image'
+        'text'
+        'button';
+        grid-template-rows: max-content fit-content .5fr;
     }
 
     /* .menu-wrapper li {

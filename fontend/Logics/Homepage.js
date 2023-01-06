@@ -44,6 +44,6 @@ $(".activity_card").hover((e) => {
 // })
 
 $('#nav-toggle').on('click', (e) => {
-    navToggle == false ? $('.menu-wrapper').css('display','flex') : $('.menu-wrapper').css('display','none')
+    navToggle == false ? $('.menu-wrapper').addClass('menu-active').removeClass('menu-wrapper') : $('.menu-active').removeClass('menu-active').addClass('menu-wrapper')
     navToggle = !navToggle
 })
