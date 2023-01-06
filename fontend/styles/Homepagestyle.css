@@ -67,6 +67,8 @@ section p {
     grid-template-rows: fit-content .2fr;
     align-content: center;
     color: rgb(255, 255, 255);
+    column-gap: 100px;
+    
 }
 
 #home {
@@ -79,20 +81,21 @@ section p {
     align-items: flex-start;
     flex-direction: column;
     grid-area: text;
-    padding: 0
+    padding: 0;
+    width:min-content
 }
 
 
 .lp-text-wrapper h1 {
     font-size: 2.5rem;
-    width: 20ch;
+    width: clamp(10ch,90%,25ch);
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .lp-text-wrapper p {
     font-size: 1.5rem;
-    width: 30ch;
+    width:40ch;
     font-weight: 400;
     line-height: 28px;
 }
@@ -157,7 +160,7 @@ section p {
 
 #lp-img {
     aspect-ratio: 4/3;
-    width: 300px;
+    width: clamp(150px,95%,500px);
     grid-area: image;
     border-radius: 20px;
     box-shadow: 10px 10px 26px #1158AC, -20px -18px 0px #1158AC;
@@ -294,6 +297,7 @@ section p {
 
     .lp-text-wrapper p {
         font-size: 1.25rem;
+        width: 20ch;
     }
 
     h2 {
@@ -307,6 +311,10 @@ section p {
         'text'
         'button';
         grid-template-rows: max-content fit-content .5fr;
+    }
+
+    #lp-img {
+        width: 200px;
     }
 
     /* .menu-wrapper li {
