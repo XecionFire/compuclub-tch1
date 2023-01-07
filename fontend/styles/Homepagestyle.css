@@ -64,7 +64,6 @@ section p {
     grid-template-areas:
         'text image'
         'button image';
-    grid-template-rows: fit-content .2fr;
     align-content: center;
     color: rgb(255, 255, 255);
     column-gap: 100px;
@@ -88,7 +87,7 @@ section p {
 
 .lp-text-wrapper h1 {
     font-size: 2.5rem;
-    width: clamp(10ch,90%,25ch);
+    width: clamp(10ch,100%,30ch);
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -292,12 +291,13 @@ section p {
 
     .lp-text-wrapper h1 {
         font-size: 1.75rem;
+        width: clamp(20ch,90vw,40ch);
     }
 
 
     .lp-text-wrapper p {
         font-size: 1.25rem;
-        width: 20ch;
+        width: clamp(10ch,90vw,50ch);
     }
 
     h2 {
@@ -310,11 +310,12 @@ section p {
         'image'
         'text'
         'button';
-        grid-template-rows: max-content fit-content .5fr;
+        justify-content: start;
     }
 
     #lp-img {
-        width: 200px;
+        width: clamp(100px,70%,300px);
+        margin:1.5rem 1.5rem 1.5rem 0
     }
 
     /* .menu-wrapper li {
