@@ -50,8 +50,8 @@ h4 {
 }
 
 section p {
-    max-width: 75ch;
-    font-size: 20px;
+    width: clamp(20ch,90%,75ch);
+    font-size: 16px;
     margin-bottom: 1em
 }
 
@@ -60,14 +60,13 @@ section p {
     background-image: linear-gradient(to bottom right, #2A58CE, #103396 70%);
     min-height: 100vh;
     justify-content: center;
-    align-items: center;
     grid-template-areas:
         'text image'
         'button image';
+    grid-template-columns: 1fr 1fr;
     align-content: center;
     color: rgb(255, 255, 255);
-    column-gap: 100px;
-    
+    column-gap: clamp(1rem,5%,5rem);
 }
 
 #home {
@@ -159,7 +158,7 @@ section p {
 
 #lp-img {
     aspect-ratio: 4/3;
-    width: clamp(150px,95%,500px);
+    width: clamp(250px,95%,500px);
     grid-area: image;
     border-radius: 20px;
     box-shadow: 10px 10px 26px #1158AC, -20px -18px 0px #1158AC;
@@ -170,7 +169,7 @@ section p {
     border: 2px solid white;
     border-radius: 15px;
     width: fit-content;
-    padding: 1rem;
+    padding: .75rem;
     font-size: 1.5rem;
     color: white;
     grid-area: button;
