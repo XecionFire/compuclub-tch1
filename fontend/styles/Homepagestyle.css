@@ -50,7 +50,7 @@ h4 {
 }
 
 section p {
-    width: clamp(20ch,90%,75ch);
+    width: clamp(20ch,90%,100ch);
     font-size: 16px;
     margin-bottom: 1em
 }
@@ -64,9 +64,11 @@ section p {
         'text image'
         'button image';
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: fit-content 1fr;
     align-content: center;
     color: rgb(255, 255, 255);
     column-gap: clamp(1rem,5%,5rem);
+    overflow-x: hidden;
 }
 
 #home {
@@ -106,7 +108,7 @@ section p {
     top: 0;
     margin-bottom: 1em;
     padding: 1em;
-    justify-content: space-evenly;
+    justify-content: space-between;
     z-index: 1;
     width: 100vw;
 }
@@ -119,6 +121,7 @@ section p {
 }
 
 .menu-wrapper {
+    margin-right: 2rem;
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -161,7 +164,8 @@ section p {
     width: clamp(250px,95%,500px);
     grid-area: image;
     border-radius: 20px;
-    box-shadow: 10px 10px 26px #1158AC, -20px -18px 0px #1158AC;
+    justify-self: center;
+    box-shadow: 10px 10px 26px #1158AC, -15px -13px 0px #1158AC;
 }
 
 #lp-button {
@@ -169,6 +173,8 @@ section p {
     border: 2px solid white;
     border-radius: 15px;
     width: fit-content;
+    height: fit-content;
+    align-self: center;
     padding: .75rem;
     font-size: 1.5rem;
     color: white;
@@ -272,6 +278,7 @@ section p {
     width: 1px;
 }
 
+/* Smaller Screen */
 @media only screen and (max-width:950px) {
     .navbar {
         justify-content: space-between;
@@ -289,13 +296,13 @@ section p {
     }
 
     .lp-text-wrapper h1 {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
         width: clamp(20ch,90vw,40ch);
     }
 
 
     .lp-text-wrapper p {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         width: clamp(10ch,90vw,50ch);
     }
 
