@@ -12,7 +12,7 @@
 
 body {
     display: grid;
-    row-gap: 5rem;
+    row-gap: 5em;
 }
 
 section {
@@ -51,7 +51,7 @@ h4 {
 
 section p {
     width: clamp(20ch,90%,100ch);
-    font-size: 16px;
+    font-size: 1.2rem;
     margin-bottom: 1em
 }
 
@@ -321,7 +321,7 @@ section p {
 
     #lp-img {
         width: clamp(100px,70%,300px);
-        margin:1.5rem 1.5rem 1.5rem 0
+        margin:1.5rem 1.5rem 2.5rem 0
     }
 
     /* .menu-wrapper li {
