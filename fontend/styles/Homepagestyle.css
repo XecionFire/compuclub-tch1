@@ -23,7 +23,8 @@ section {
 h1,
 h2,
 h3,
-h4 {
+h4,
+label {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -57,7 +58,7 @@ section p {
 
 
 #landing-page {
-    background-image: linear-gradient(to bottom right, #2A58CE, #103396 70%);
+    background-image: linear-gradient(to bottom right, #2A58CE, #123699 70%);
     min-height: 100vh;
     justify-content: center;
     grid-template-areas:
@@ -67,7 +68,7 @@ section p {
     grid-template-rows: fit-content 1fr;
     align-content: center;
     color: rgb(255, 255, 255);
-    column-gap: clamp(1rem,5%,5rem);
+    column-gap: clamp(0.5rem,10%,5rem);
     overflow-x: hidden;
 }
 
@@ -89,20 +90,19 @@ section p {
 
 .lp-text-wrapper h1 {
     font-size: 2.5rem;
-    width: clamp(10ch,100%,30ch);
+    width: clamp(20ch,55vw,40ch);
     font-weight: 900;
     text-transform: uppercase;
 }
 
 .lp-text-wrapper p {
     font-size: 1.5rem;
-    width:40ch;
+    width:clamp(25ch,50vw,60ch);
     font-weight: 400;
     line-height: 28px;
 }
 
 .navbar {
-
     display: flex;
     align-items: center;
     justify-self: center;
@@ -141,7 +141,7 @@ section p {
 
 .navbar a>h2 {
     color: #fff;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
 }
 
 #nav-toggle {
@@ -163,7 +163,7 @@ section p {
 
 #lp-img {
     aspect-ratio: 4/3;
-    width: clamp(250px,95%,500px);
+    width: clamp(300px,95%,500px);
     grid-area: image;
     border-radius: 20px;
     justify-self: center;
@@ -278,6 +278,24 @@ section p {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+.contact_form {
+
+}
+
+.contact_form input,.contact_form textarea {
+    display: block;
+}
+
+.contact_form label {
+    font-size: 1.2rem;
+}
+
+.contact_form input {
+    font-size: 1rem;
+    padding: .5em;
+    width: 20vw;
 }
 
 /* Smaller Screen */
