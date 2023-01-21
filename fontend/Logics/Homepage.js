@@ -9,7 +9,7 @@ ScrollTrigger.create({
         gsap.to(Navbar,{backgroundColor:'#103396',duration:0.1})
     },
     onLeaveBack:() => {
-        gsap.to(Navbar,{backgroundColor:'#10339600',duration:0.1})
+        gsap.to(Navbar,{backgroundColor:'#10339601',duration:0.1})
     }
 })
 
