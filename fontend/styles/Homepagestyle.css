@@ -286,6 +286,8 @@ section p {
 
 .contact_form input,.contact_form textarea {
     display: block;
+    border-radius: 5px;
+    border: 1px solid black
 }
 
 .contact_form label {
