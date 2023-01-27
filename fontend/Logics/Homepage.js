@@ -43,7 +43,3 @@ $(".activity_card").hover((e) => {
 //     console.log(this);
 // })
 
-$('#nav-toggle').on('click', (e) => {
-    navToggle == false ? $('.menu-wrapper').addClass('menu-active').removeClass('menu-wrapper') : $('.menu-active').removeClass('menu-active').addClass('menu-wrapper')
-    navToggle = !navToggle
-})
