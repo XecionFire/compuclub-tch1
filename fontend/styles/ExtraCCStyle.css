@@ -7,21 +7,42 @@
 
 * {
     padding: 0;
-    margin: 0,
+    margin: 0;
 }
 
 body {
-    margin: 1em
+    display: grid;
+    row-gap: 5em;
 }
 
 h1,
 h2,
-h3 {
-    font-family: 'Poppins';
+h3,
+h4,
+label {
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    font-size: 56px;
+p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 24px;
 }
 
 p,
@@ -108,4 +129,60 @@ label {
 .introduction {
     border-bottom: 2px solid hsla(0, 0%, 50%, 0.1);
     margin-bottom: 1rem;
+}
+
+#home {
+    user-select: none;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: fixed;
+    top: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100vw;
+    background-color: #103396   ;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer
+}
+
+.menu-wrapper {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.menu-wrapper li {
+    margin-left: 1em;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: rgb(203, 203, 203)
+}
+
+.navbar a>h2 {
+    color: #fff;
+    margin-left: 2.5rem;
+}
+
+#nav-toggle {
+    display: none;
+    margin-right: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
 }
